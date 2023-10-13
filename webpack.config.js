@@ -37,10 +37,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './frontend/public/index.html'
+      template: './index.html'
     }),
     new webpack.DefinePlugin({
-      'process.env.PUBLIC_URL': JSON.stringify('/frontend/public') // Adjusted to your provided path
+      'process.env.PUBLIC_URL': JSON.stringify('/') // Adjusted to your provided path
     })
   ],
   devServer: {
