@@ -1,0 +1,376 @@
+body, html, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styling for sections */
+.section {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Title styling */
+.section h2, .section h3 {
+  border-bottom: 2px solid #0c99d1; /* Change the color as per your design preference */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Paragraph styling */
+.section p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* List styling */
+.section ul {
+  list-style-type: circle; /* Circular bullets for lists */
+  color: #555;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Highlighted text styling */
+.highlighted {
+  font-weight: bold;
+  color: #0c99d1; /* Change the color as per your design preference */
+}
+
+.content-overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  padding: 20px;
+  border-radius: 10px; /* Optional for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+  margin: 0px 150px
+}
+
+.Logo {
+  font-family: 'Bungee', cursive;
+  font-size: 30px; /* Adjust this value according to your preference */
+}
+
+.Logo .white-text {
+  color: white;
+}
+
+.Logo .dark-text {
+  color: black;  /* Or any desired dark color */
+}
+
+/* //home page!!!!!!!!!!!!!!!!  Themes are states passed from Layout to the photo(to allow for transparency in the photos to show on the timed loop), and for the background color to change as well. */
+
+
+
+/*Navbar scrolling versus static at the top.  Navbar will change to transparent when in motion to allow for more full screen appearance*/
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertically aligned content */
+  width: 100%;
+}
+
+.overlay-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 115px;
+  width: 100%;
+  z-index: 1000; 
+  background-color: transparent !important;
+}
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(121, 114, 114, 0.4);
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px; /* Add some spacing between the menu items */
+}
+
+/*Background for the changing colors*/
+.header-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: #3d98d4;
+  transition: background-color 0.5s ease-in;
+  z-index:900
+}
+
+.polaroid-image {
+  width: 340px;  /* Adjust this to control the width of the image */
+  height: 400px; /* Maintains the 17:20 aspect ratio based on width */
+  border: 10px solid white;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* To center the image */
+}
+/*Sidebar menu changes*/
+
+.closebtn {
+  position: absolute;
+  top: 10px;   /* Adjust positioning as needed */
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;  /* You can adjust the color as needed */
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #ccc;  /* Adjust hover color as needed */
+}
+
+/* Icon styling can be added here if needed */
+
+/*Form styling*/
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  font-weight: bold;  /* Make the heading bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);  /* subtle text shadow */
+  margin: 20px 0;  /* Add some margin around the heading for spacing */
+}
+
+/* Generic card styles */
+.card, .form-card, .projects-card {
+  flex: 1;
+  margin: 20px 10px;  /* Increase margin for better spacing */
+  max-width: 350px;
+  min-width: 300px;
+  padding: 25px 20px;  /* Adjust padding */
+  border: none;  /* Remove the border */
+  border-radius: 10px;  /* Slightly rounded corners */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;  /* Add transition for hover effect */
+}
+
+.card:hover, .form-card:hover, .projects-card:hover {
+  transform: translateY(-5px);  /* Lift the card a bit on hover */
+}
+
+.card-header, .card-footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  margin-bottom: 20px;
+}
+
+.card-image, .projects-card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-form {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;  /* Make the text bold */
+  border: none;
+  border-radius: 30px;  /* Rounded edges */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #007bff, #0056b3);  /* Gradient background */
+  color: #ffffff;
+  outline: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);  /* subtle text shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* subtle shadow for depth */
+}
+
+.btn-form:hover {
+  background: linear-gradient(45deg, #0056b3, #007bff);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  /* Increase shadow depth on hover */
+}
+
+.btn-form:active {
+  transform: scale(0.95);  /* Slightly reduce the size on click to give a press effect */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form-specific styles */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* This will ensure it takes at least the full viewport height, but can be adjusted or removed based on your needs */
+  background-color: #cecaca;
+}
+#Form {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+#Form h2, #Form h3 {
+  margin-bottom: 25px;
+}
+
+#Form h3 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.form-card:hover {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+#Form .form-control, #Form .form-select {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#Form .form-control:focus, #Form .form-select:focus {
+  border: 1px solid #1DA1F2;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#Form .form-select {
+  appearance: none;
+}
+
+/* Other sections */
+/*Contact wrapper*/
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;  /* Align items to the top */
+  padding: 20px;  /* Add padding around */
+  max-width: 1200px;  /* Set a max-width */
+  margin: 0 auto;  /* Center the wrapper */
+}
+
+.quote-container {
+  margin: 40px auto;
+  padding: 20px;
+  border-left: 5px solid #333; /* Adjust the color to match your design if needed */
+  font-style: italic;
+}
+
+.quote-container blockquote {
+  font-size: 24px; /* Adjust size to your preference */
+  line-height: 1.6;
+  color: #555; /* Adjust color to your preference */
+  font-family: "Georgia", serif; /* Use a font that gives a "flowing" feel. Adjust to your preference */
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.general-header-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: #274137;
+  transition: background-color 0.5s ease-in;
+  z-index: 900;
+}
+
+.projects-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.modal-content {
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1020;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px; top: 10px;
+  background: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #ff6961;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* This will ensure it takes at least the full viewport height, but can be adjusted or removed based on your needs */
+  }
+  .content-overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px;
+    border-radius: 10px; /* Optional for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+    margin: 0px
+  }
+}
