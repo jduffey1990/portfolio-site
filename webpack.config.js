@@ -37,7 +37,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: './index.html',
+      favicon: './favicon.png'
     }),
     new webpack.DefinePlugin({
       'process.env.PUBLIC_URL': JSON.stringify('/') // Adjusted to your provided path
