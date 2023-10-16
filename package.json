@@ -6,11 +6,11 @@
   "homepage": "https://www.foxdogdevelopment.com/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open --mode development",
     "prebuild": "chmod +x node_modules/.bin/* && ls -l node_modules/.bin/",
-    "build": "npm install && npx webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "npm install && npx webpack --mode production"
   },
   "keywords": [],
   "author": "",
