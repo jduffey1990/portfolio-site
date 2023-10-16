@@ -25,10 +25,15 @@ function NavBar({ currentTheme }) {
         {/* Center Logo */}
         <div style={{textAlign:"left"}}>
           <Link className="navbar-brand" to="/">
-            <div className={`Logo ${scrolling ? 'white-text' : 'dark-text'}`} style={{ paddingLeft: '80px' }}>
-              <span style={{ fontWeight: 'bold', fontFamily: "'Arial Black', Gadget, sans-serif", lineHeight: '0.8' }}>
-                Fox Dog Software Development
-                </span>
+            <div className={`Logo ${scrolling ? 'white-text' : 'dark-text'}`} style={{ paddingLeft: '30px' }}>
+              <div className="title">
+                <div className="line">
+                  <div>Fox Dog</div>
+                </div>
+                <div className="line" style={{marginLeft:"10px"}}>
+                <div>Software Development</div>
+                </div>
+            </div>
             </div>
           </Link>
         </div>

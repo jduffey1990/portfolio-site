@@ -105,6 +105,15 @@ body, html, .container-fluid {
   margin: 0 15px; /* Add some spacing between the menu items */
 }
 
+.title {
+  font-weight: bold;
+  font-family: "'Arial Black', Gadget, sans-serif";
+  line-height: 0.8;
+  display: flex;
+  flex-direction: row; /* By default, it's column layout */
+  justify-content: space-between;
+}
+
 /*Background for the changing colors*/
 .header-background {
   display: flex;
@@ -372,5 +381,10 @@ h2 {
     border-radius: 10px; /* Optional for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
     margin: 0px
+  }
+  .title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
