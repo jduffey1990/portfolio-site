@@ -5,7 +5,7 @@ const webpack = require('webpack'); // Make sure you require webpack
 module.exports = {
   entry: './frontend/src/index.js',
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js'
   },
   module: {
@@ -46,7 +46,7 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
-    static: './dist',
+    static: './build',
     hot: false,
   }
 };
