@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import GenBackground from '../Layout/GenBackground';
 import Contentback from "../images/Contentback.png";
 import Couple from "../images/ashandi.jpg";
-import FoxDogartsy from "../images/FoxDogartsy.png"
+import FoxDog from "../images/FoxDog.png"
 
 function About() {
     return (
         <>
-            <GenBackground backgroundImage={FoxDogartsy}/>
+            <GenBackground backgroundImage={FoxDog}/>
             
             <div style={{ 
                 backgroundImage: `url(${Contentback})`, 

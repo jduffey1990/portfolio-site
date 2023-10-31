@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import GenBackground from "../../Layout/GenBackground"
 import Content from "./Content";
 
-import FoxDog from "../../images/FoxDog.png";
+import FoxDog from "../../images/FoxDogArtsy.png";
 
 import Footer from "../../Layout/Footer"
 
