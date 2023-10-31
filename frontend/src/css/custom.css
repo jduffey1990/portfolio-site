@@ -386,5 +386,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
+  }
+  .nav-item {
+    margin: 0 10px; /* Add some spacing between the menu items */
+    font-size: x-small;
   }
 }
