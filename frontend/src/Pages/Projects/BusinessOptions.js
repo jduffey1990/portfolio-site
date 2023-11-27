@@ -12,7 +12,7 @@ function BusinessOptions() {
                 title="The Mortgage Bureau *UNDER DEVELOPMENT*" 
                 image={TMB}
                 shortDescription="Boutique Mortgage Broker in the Denver Area requested that I fabricate them a more modern and directly functional website than an 'out of the box' solution could manage." 
-                onClick={() => window.open("https://mortgage-bureau.vercel.app/", '_blank')}
+                onClick={() => window.open("http://mortgage-bureau-static.s3-website.us-east-2.amazonaws.com/", '_blank')}
 />
             </div>
         </>
