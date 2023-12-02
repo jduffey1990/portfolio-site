@@ -9,10 +9,10 @@ function BusinessOptions() {
             <h3 style={{ marginTop:'50px', textAlign:'center'}}>Business Ventures</h3>
             <div className="projects-card-container" style={{margin: "20px 100px" }}>
             <ProjectsCard 
-                title="The Mortgage Bureau *UNDER DEVELOPMENT*" 
+                title="The Mortgage Bureau" 
                 image={TMB}
                 shortDescription="Boutique Mortgage Broker in the Denver Area requested that I fabricate them a more modern and directly functional website than an 'out of the box' solution could manage." 
-                onClick={() => window.open("http://mortgage-bureau-static.s3-website.us-east-2.amazonaws.com/", '_blank')}
+                onClick={() => window.open("https://themortgagebureau.com", '_blank')}
 />
             </div>
         </>
