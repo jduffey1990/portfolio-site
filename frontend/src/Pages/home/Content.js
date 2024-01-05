@@ -26,10 +26,10 @@ function Content() {
 
                 <div className="card">
                     <div className="card-header">
-                        <img className="card-image" src={Contactcard} alt="Contact Us" />
+                        <img className="card-image" src={Contactcard} alt="Contact" />
                     </div>
                     <div className="card-footer">
-                            <Link className="btn-form" to="/contact">Contact Us</Link> {/* <-- Use Link here */}
+                            <Link className="btn-form" to="/contact">Contact</Link> {/* <-- Use Link here */}
                     </div>
                 </div>
                 
@@ -49,9 +49,9 @@ function Content() {
                             Fox Dog specializes in crafting intuitive user interfaces and ensures responsive user experiences. Our front-end services include:
                         </p>
                         <ul>
+                            <li>JavaScript</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JavaScript</li>
                             <li>React.js</li>
                         </ul>
                     </section>
@@ -64,7 +64,7 @@ function Content() {
                         <ul>
                             <li>Express.js</li>
                             <li>Node.js</li>
-                            <li>Database Management</li>
+                            <li>AWS</li>
                             <li>RESTful APIs</li>
                             <li>PostgreSQL</li>
                         </ul>

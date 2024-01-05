@@ -19,7 +19,7 @@ function BusinessOptions() {
             <ProjectsCard 
                 title="Mann Ranch" 
                 image={cattle}
-                shortDescription="UNDER CONSTRUCTION-Nestled in the scenic Flint Hills of Kansas, stands as a beacon of excellence in the world of Red Angus cattle." 
+                shortDescription="UNDER CONSTRUCTION-Nestled in the scenic Flint Hills of Kansas, stands as a beacon of excellence in the world of Red Angus cattle. We are taking a pause after the website mockup for the owner to get more photos in different parts of the year for a full-season representation." 
                 onClick={() => window.open("http://mrflinthills.com.s3-website.us-east-2.amazonaws.com", '_blank')}
             />
             </div>

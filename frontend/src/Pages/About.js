@@ -52,6 +52,10 @@ function About() {
                         <p>
                             As a software developer, Jordan aspires to leverage technology in crafting impactful real-world solutions. Driven by the transformative power of software, he aims to enhance lives, optimize processes, and promote global connectivity. With his background in healthcare, he brings a unique perspective and is eager to bridge the healthcare-technology divide, ensuring the creation of tools that are both efficient and empathetic.
                         </p>
+                        <p>
+                            Jordan is trusted by business professionals to complete their websites with care and empathy.  In the "Projects" link you can see the websites he has finished or is under construction.  The Mortgage Bureau is a happy customer of Fox Dog that wasn't happy with the annual expense of a "out-of-a-box" mortgage website solution they were previously using.  Jordan was able to decrease monthly expenses from around $315 a month to $10 a month with a one-time, upfront price solution that was less than paying a year of their previous subscription.  Mann Ranch is a mixed-use ranch outside of Wichita, KS that is both for personal property use and cattle ranching.  We have agreed on styling, and are waiting for professional photos from all four seasons to provide a curated glimpse into potential ownership once the photos can all be added to the website.
+
+                        </p>
                     </section>
 
                     <section className="section">
