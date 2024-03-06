@@ -3,7 +3,7 @@ import ProjectsCard from "./ProjectsCard";
 import jordle from "../../images/jordle.png"
 import res from "../../images/res.png"
 import memory from "../../images/memory-game.png"
-import flashcard from "../../images/flashcard.png"
+import finance from "../../images/finance.png"
 
 function pleasureOptions() {
 
@@ -38,10 +38,10 @@ function pleasureOptions() {
                   onClick={() => window.open("https://github.com/jduffey1990/restaurant-reservation", '_blank')}
                 />
                 <ProjectsCard 
-                  title="project-flashcards" 
-                  image={flashcard}
-                  shortDescription="This is a React-based web application for creating and studying flashcards. The deployed version of the app does not have a backend, so please look at the code to see the React implementation and logic. Enhancements to include a fully functional backend are planned for the future." 
-                  onClick={() => window.open("https://github.com/jduffey1990/project-flashcards", '_blank')}
+                  title="Duffey Finance" 
+                  image={finance}
+                  shortDescription="Through Harvard's CS50 course, an assignment we were given was to develop this finance app where users can buy and sell stocks with a fake cash value ready upon profile creation with a personal touch of live stock tracking.  Please don't use any sensitive information on this site, and the Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
+                  onClick={() => window.open("https://duffeyfinance.onrender.com", '_blank')}
                 />
             </div>
       </>
