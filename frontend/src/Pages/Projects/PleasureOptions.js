@@ -16,6 +16,19 @@ function pleasureOptions() {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
                 <h3>GitHub Projects</h3>
                 <button className="btn-form" onClick={openLink}>My Github Page</button>
+                <h6 style={{
+                    marginTop: '20px',
+                    color: '#586069',  // softer color for easier reading
+                    fontFamily: '"Segoe UI", Arial, sans-serif',  // more legible font
+                    fontWeight: 'normal',  // less bold to reduce strain
+                    lineHeight: '1.5',  // more line spacing for readability
+                    maxWidth: '600px',  // limits the width for better text alignment
+                    textAlign: 'center',  // centers text for aesthetic balance
+                    padding: '10px',  // adds space inside the h6 element
+                    backgroundColor: '#f6f8fa',  // light background to highlight the area
+                    borderRadius: '8px',  // rounded corners for modern look
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'  // subtle shadow for depth
+                  }}>I know it's annoying, but please excuse the load time on the requests for these sites.  If I paid for immediate availability on my projects it would cost a lot in database prices every month.</h6>
             </div>
             <div className="projects-card-container" style={{margin: "20px 100px" }}>
 

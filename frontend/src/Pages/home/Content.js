@@ -46,20 +46,22 @@ function Content() {
                     <section className="section">
                         <h3>Front-End Services</h3>
                         <p>
-                            Fox Dog specializes in crafting intuitive user interfaces and ensures responsive user experiences. Our front-end services include:
+                            Fox Dog specializes in crafting intuitive user interfaces and ensures responsive user experiences. Our front-end services include these and more:
                         </p>
                         <ul>
-                            <li>JavaScript</li>
+                            <li>JavaScript/Typescript</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>React.js</li>
+                            <li>Python</li>
+                            <li>Flask</li>
                         </ul>
                     </section>
 
                     <section className="section">
                         <h3>Back-End Services</h3>
                         <p>
-                            Fox Dog provides the foundation for web applications with robust back-end services. Our back-end capabilities encompass:
+                            Fox Dog provides the foundation for web applications with robust back-end services. Our back-end capabilities encompass these and more:
                         </p>
                         <ul>
                             <li>Express.js</li>
@@ -73,7 +75,7 @@ function Content() {
                     <section className="section">
                         <h3>Full-Stack Development</h3>
                         <p>
-                            At Fox Dog, we take pride in our capability to seamlessly integrate front-end and back-end components, delivering optimal full-stack solutions for a range of projects.
+                            At Fox Dog, we take pride in our capability to seamlessly integrate front-end and back-end components, delivering optimal full-stack solutions for a range of projects.  The technologies listed above are only some of the packages I am more closely versed in.  Feel free to go to my <a href="https://github.com/jduffey1990">GitHub profile</a> and peruse my projects for more!
                         </p>
                     </section>
 
