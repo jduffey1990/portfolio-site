@@ -4,6 +4,7 @@ import GenBackground from '../Layout/GenBackground';
 import Contentback from "../images/Contentback.png";
 import Couple from "../images/ashandi.jpg";
 import FoxDog from "../images/FoxDog.png"
+import MapBoxMap from '../../use-mapbox-gl-js-with-react/MapBoxMap';
 
 function About() {
     return (
@@ -62,6 +63,10 @@ function About() {
                         <p>
                             For further insights into Jordan's coding journey and resources, please feel free to <Link to="/contact">contact him</Link>.
                         </p>
+                    </section>
+
+                    <section className="section">
+                        <MapBoxMap /> {/* Using the Map component */}
                     </section>
 
                     <hr />

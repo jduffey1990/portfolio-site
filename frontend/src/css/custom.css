@@ -363,6 +363,7 @@ h2 {
   color: #ff6961;
 }
 
+
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
