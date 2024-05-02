@@ -4,7 +4,7 @@ import './map.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import mapboxicon from "../src/images/mapbox-icon.png"; // Make sure the path is correct
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiamR1ZmZleTE5OTAiLCJhIjoiY2x2b2MzZzZtMG04czJqc2VjcXY3NmVmOSJ9.E3qBEHF9DGC_GOpOuXAG0w';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 export default function App() {
   const mapContainer = useRef(null);
