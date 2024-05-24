@@ -6,7 +6,13 @@
     <title>Page Not Found</title>
     <script>
         // Redirect to the root URL and let React Router handle it
-        window.location.replace('/');
+        (function() {
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            var redirectTo = '/' + '#' + pathname + search + hash;
+            window.location.replace(redirectTo);
+        })();
     </script>
 </head>
 <body>
