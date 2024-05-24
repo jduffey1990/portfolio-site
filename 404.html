@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
     <script>
-        // Save the original path and redirect to the root URL
-        var pathname = window.location.pathname + window.location.search + window.location.hash;
-        window.location.replace('/?redirect=' + encodeURIComponent(pathname));
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+
+        // Construct the full URL path
+        var redirectTo = (pathname ? pathname : "") + 
+                         (search ? search : "") + 
+                         (hash ? hash : "");
+
+        // Encode the full URL path and redirect to the root with the encoded path
+        window.location.replace('/?redirect=' + encodeURIComponent(redirectTo));
     </script>
 </head>
 <body>
