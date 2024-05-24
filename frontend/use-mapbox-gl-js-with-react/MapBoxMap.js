@@ -20,11 +20,11 @@ export default function App() {
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [-105.09381942400067, 39.7491384536464]
-        },
+          coordinates: [-105.08874806888235, 39.74662488779541]
+        },  
         properties: {
           title: 'Home Office',
-          description: '8635 W. 21st Ave'
+          description: 'Morse Park, Lakewood, CO'
         }
       }
     ]

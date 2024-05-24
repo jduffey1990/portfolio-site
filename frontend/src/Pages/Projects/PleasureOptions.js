@@ -4,6 +4,9 @@ import jordle from "../../images/jordle.png"
 import res from "../../images/res.png"
 import memory from "../../images/memory-game.png"
 import finance from "../../images/finance.png"
+import csharapi from "../../images/csharapi.png"
+import mma from "../../images/mma.png"
+import fintech from "../../images/fintech.png"
 
 function pleasureOptions() {
 
@@ -28,7 +31,7 @@ function pleasureOptions() {
                     backgroundColor: '#f6f8fa',  // light background to highlight the area
                     borderRadius: '8px',  // rounded corners for modern look
                     boxShadow: '0 2px 4px rgba(0,0,0,0.1)'  // subtle shadow for depth
-                  }}>I know it's annoying, but please excuse the load time on the requests for these sites.  If I paid for immediate availability on my projects it would cost a lot in database prices every month.</h6>
+                  }}>These projects, although some may have been assignments for a course, are my own.  If there was a framework needed to satisfy course requirement, there are other significant changes made to make it my own. <br></br> <br></br>I know it's annoying, but please excuse the load time on the requests for these sites.  If I paid for immediate availability on my projects it would cost a lot in database prices every month.</h6>
             </div>
             <div className="projects-card-container" style={{margin: "20px 100px" }}>
 
@@ -47,7 +50,7 @@ function pleasureOptions() {
                 <ProjectsCard 
                   title="restaurant-reservation" 
                   image={res}
-                  shortDescription="Restaurant Reservation is made for a ficticious restaurant named 'Periodic Tables' to manage their tables and reservations.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
+                  shortDescription="Restaurant Reservation is modeled by a ficticious restaurant named 'Periodic Tables' to manage their tables and reservations.  Fully CRUD and functional for any restaurant in need of reservation management.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the demo site." 
                   onClick={() => window.open("https://github.com/jduffey1990/restaurant-reservation", '_blank')}
                 />
                 <ProjectsCard 
@@ -55,6 +58,24 @@ function pleasureOptions() {
                   image={finance}
                   shortDescription="Through Harvard's CS50 course, an assignment we were given was to develop this finance app where users can buy and sell stocks with a fake cash value ready upon profile creation with a personal touch of live stock tracking.  Please don't use any sensitive information on this site, and the Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
                   onClick={() => window.open("https://duffeyfinance.onrender.com", '_blank')}
+                />
+                <ProjectsCard 
+                  title="CSharp API" 
+                  image={csharapi}
+                  shortDescription="DotnetAPI Project is a RESTful API built using C# .NET Core, utilizing Dapper for data access and JWT for security. My development up until this point has mainly focused on frontend endeavors, with the most basic understanding of API and backend development as a means to an end. I wanted to correct that gap in knowledge while learning new languages and frameworks." 
+                  onClick={() => window.open("https://github.com/jduffey1990/csharpapi", '_blank')}
+                />
+                <ProjectsCard 
+                  title="March Madness Algorithm" 
+                  image={mma}
+                  shortDescription="Javascript CLI application.  A lot of bracket challenges give you the odds for each matchup, but this doesn't really help you make a choice when the odds are 78 and 22. That's why I used my development skills to create my March Madness algorithm. The historical odds for all possible matchups like 1vs16 or 7vs10 are baked in and applied systematically to each round that the computer generates." 
+                  onClick={() => window.open("https://github.com/jduffey1990/March-Madness", '_blank')}
+                />
+                <ProjectsCard 
+                  title="Fintech ETL" 
+                  image={fintech}
+                  shortDescription="This ETL pipeline reads data from two input files, processes the data to calculate the market value and sector weights, and writes the results to an output file. The project is designed to demonstrate data processing capabilities and financial calculations." 
+                  onClick={() => window.open("https://github.com/jduffey1990/fintechETL", '_blank')}
                 />
             </div>
       </>

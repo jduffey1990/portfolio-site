@@ -363,6 +363,28 @@ h2 {
   color: #ff6961;
 }
 
+/* NotFound.css */
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.NotFound h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+}
+
+.NotFound p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #666;
+}
 
 @media (max-width: 768px) {
   .navbar-container {

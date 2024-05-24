@@ -7,11 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "add-domain": "echo \"foxdogdevelopment.com\" > build/CNAME",
-    "deploy": "npm run add-domain && gh-pages -d build",
+    "postbuild": "copyfiles 404.html CNAME build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open --mode development",
-    "prebuild": "chmod +x node_modules/.bin/* && ls -l node_modules/.bin/",
-    "build": "npm install && npx webpack --mode production"
+    "build": "npx webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +30,7 @@
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.3",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.0.0",

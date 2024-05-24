@@ -14,7 +14,7 @@ function BusinessOptions() {
                 title="The Mortgage Bureau" 
                 image={TMB}
                 shortDescription="Boutique Mortgage Broker in the Denver Area requested that I fabricate them a more modern and directly functional website than an 'out of the box' solution could manage." 
-                onClick={() => window.open("https://themortgagebureau.com", '_blank')}
+                onClick={() => window.open("http://themortgagebureau.com.s3-website.us-east-2.amazonaws.com/", '_blank')}
             />
             <ProjectsCard 
                 title="Mann Ranch" 
