@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
     <script>
-        // Redirect to the correct route
+        // Redirect to the correct route without causing an infinite loop
         (function() {
             var pathname = window.location.pathname;
             var search = window.location.search;
             var hash = window.location.hash;
-            var redirectTo = pathname + search + hash;
-            window.location.replace('/index.html' + redirectTo);
+            if (!pathname.startsWith('/index.html')) {
+                var redirectTo = pathname + search + hash;
+                window.location.replace('/index.html' + redirectTo);
+            }
         })();
     </script>
 </head>
