@@ -7,8 +7,11 @@
     <script>
         // Redirect to the correct route
         (function() {
-            var redirectTo = window.location.pathname.replace(/^\//, '') + window.location.search;
-            window.location.replace('/?' + redirectTo);
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            var redirectTo = pathname + search + hash;
+            window.location.replace('/index.html' + redirectTo);
         })();
     </script>
 </head>
