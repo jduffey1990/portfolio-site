@@ -56,13 +56,13 @@ function pleasureOptions() {
                 <ProjectsCard 
                   title="Duffey Finance" 
                   image={finance}
-                  shortDescription="Through Harvard's CS50 course, an assignment we were given was to develop this finance app where users can buy and sell stocks with a fake cash value ready upon profile creation with a personal touch of live stock tracking.  Please don't use any sensitive information on this site, and the Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
+                  shortDescription="Through Harvard's CS50 course, an assignment we were given was to develop a basic app using python and flask.  Once out of the course, the stock data wouldn't work anymore, so I paired the basic structure with the more robust Alpha Vantage API for real-life tickers and sustained stock tracking.  Please don't use sensitive password's or other identifying info on this site." 
                   onClick={() => window.open("https://duffeyfinance.onrender.com", '_blank')}
                 />
                 <ProjectsCard 
                   title="CSharp API" 
                   image={csharapi}
-                  shortDescription="DotnetAPI Project is a RESTful API built using C# .NET Core, utilizing Dapper for data access and JWT for security. My development up until this point has mainly focused on frontend endeavors, with the most basic understanding of API and backend development as a means to an end. I wanted to correct that gap in knowledge while learning new languages and frameworks." 
+                  shortDescription="DotnetAPI Project is a RESTful API built using C# .NET Core, utilizing Dapper for data access and JWT for security.  First exposure to C# and EF Core.  Most lasting and useful information since learning was the JWT module and sessioning." 
                   onClick={() => window.open("https://github.com/jduffey1990/csharpapi", '_blank')}
                 />
                 <ProjectsCard 
@@ -74,7 +74,7 @@ function pleasureOptions() {
                 <ProjectsCard 
                   title="Fintech ETL" 
                   image={fintech}
-                  shortDescription="This ETL pipeline reads data from two input files, processes the data to calculate the market value and sector weights, and writes the results to an output file. The project is designed to demonstrate data processing capabilities and financial calculations." 
+                  shortDescription="This ETL pipeline reads data from two input files, processes the data to calculate the market value and sector weights, and writes the results to an output file. The project is designed to demonstrate data processing capabilities and financial calculations.  Just wanted a cool ETL project and I have been exposed to finance companies and methods, so here is an example." 
                   onClick={() => window.open("https://github.com/jduffey1990/fintechETL", '_blank')}
                 />
             </div>
