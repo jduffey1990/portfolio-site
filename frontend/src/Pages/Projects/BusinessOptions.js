@@ -2,7 +2,7 @@ import React from "react";
 import ProjectsCard from "./ProjectsCard";
 
 import TMB from "../../images/TMB.png"
-import cattle from "../../images/cattle.png"
+import pomarium from "../../images/pomarium.png"
 
 function BusinessOptions() {
 
@@ -17,10 +17,10 @@ function BusinessOptions() {
                 onClick={() => window.open("http://themortgagebureau.com.s3-website.us-east-2.amazonaws.com/", '_blank')}
             />
             <ProjectsCard 
-                title="Mann Ranch" 
-                image={cattle}
-                shortDescription="UNDER CONSTRUCTION-Nestled in the scenic Flint Hills of Kansas, stands as a beacon of excellence in the world of Red Angus cattle. We are taking a pause after the website mockup for the owner to get more photos in different parts of the year for a full-season representation." 
-                onClick={() => window.open("http://mrflinthills.com.s3-website.us-east-2.amazonaws.com", '_blank')}
+                title="Pomarium" 
+                image={pomarium}
+                shortDescription="This website is the public access for insight into Pomarium's business operations.  You could contact the team if you are an advisor that wants to see our product.  Discuss with Jordan and he might be able to demo an ephemeral environment of the application." 
+                onClick={() => window.open("http://getpomarium.com", '_blank')}
             />
             </div>
         </>

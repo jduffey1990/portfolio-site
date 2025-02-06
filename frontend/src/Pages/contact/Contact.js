@@ -23,7 +23,7 @@ function Contact() {
                 <ContactCard 
                     title="LinkedIn" 
                     image={linked}
-                    onClick={() => window.open("https://www.linkedin.com/in/yourProfileName/", '_blank')}
+                    onClick={() => window.open("https://www.linkedin.com/in/jordan-duffey/", '_blank')}
                 />
                 <ContactCard 
                     title="GitHub" 
@@ -36,9 +36,6 @@ function Contact() {
                     onClick={() => window.location.href="mailto:foxdogdevelopment@gmail.com"}
                 />
 
-        </div>
-        <div className='contact-wrapper'>
-            {/* You can add more content here if needed */}
         </div>
         
         <Footer />

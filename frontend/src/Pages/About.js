@@ -57,6 +57,10 @@ function About() {
                             Jordan is trusted by business professionals to complete their websites with care and empathy.  In the "Projects" link you can see the websites he has finished or is under construction.  The Mortgage Bureau is a happy customer of Fox Dog that wasn't happy with the annual expense of a "out-of-a-box" mortgage website solution they were previously using.  Jordan was able to decrease monthly expenses from around $315 a month to $10 a month with a one-time, upfront price solution that was less than paying a year of their previous subscription.  Mann Ranch is a mixed-use ranch outside of Wichita, KS that is both for personal property use and cattle ranching.  We have agreed on styling, and are waiting for professional photos from all four seasons to provide a curated glimpse into potential ownership once the photos can all be added to the website.
 
                         </p>
+                        <p>
+                            Pomarium was an opportunity that came in just in the nick of time.  The C-suite had an MVP built by contractors, and had finished a friends and family investment round.  The time was right to hire a growing team.  Jordan started immediately on full-stack development with Pomarium, often working directly with members of the c-suite to turn their imaginations into software reality.  Jordan's Magnum Opus with Pomarium was implementing a fully integrated payment system, not merely just a payment portal.  Stripe was connected into the application like a grape vine can be grafted into an established orchard.  This change dropped the Operations Teams involvement in billing by nearly 100% (there's always something that needs hands on...).  Pomarium continues the fight to bring investors portfolios that put their money where their values are!
+
+                        </p>
                     </section>
 
                     <section className="section">

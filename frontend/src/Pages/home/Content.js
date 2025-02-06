@@ -35,56 +35,76 @@ function Content() {
                 
             </section>
             
-                <div className="content-overlay">
-                    <section className="section">
-                        <h2>Web Development Expertise by Fox Dog</h2>
-                        <p>
-                            Welcome to the official portfolio of <span className="highlighted">Fox Dog</span>. Based in Denver, CO, Fox Dog offers adept full-stack development services, with a rich experience spanning across front-end, back-end, and integrated full-stack projects. At Fox Dog, the vision is to transform digital ideas into tangible realities efficiently.
-                        </p>
-                    </section>
+            <div className="content-overlay">
+                <section className="section">
+                    <h2>Software Development Expertise by Fox Dog</h2>
+                    <p>
+                    Welcome to the official portfolio of <span className="highlighted">Fox Dog</span>. Based in Denver, CO, Fox Dog delivers adept full-stack solutions harnessing cutting-edge technologies like Vue, React, Express, and Django. With a rich experience across front-end, back-end, and fully integrated solutions, we excel at transforming digital ideas into working realities.
+                    </p>
+                </section>
 
-                    <section className="section">
-                        <h3>Front-End Services</h3>
-                        <p>
-                            Fox Dog specializes in crafting intuitive user interfaces and ensures responsive user experiences. Our front-end services include these and more:
-                        </p>
-                        <ul>
-                            <li>JavaScript/Typescript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>React.js</li>
-                            <li>Python</li>
-                            <li>Flask</li>
-                        </ul>
-                    </section>
+                <section className="section">
+                    <h3>Front-End Services</h3>
+                    <p>
+                    We specialize in creating intuitive and responsive user interfaces tailored to deliver seamless user experiences. Our front-end services include:
+                    </p>
+                    <ul>
+                    <li>JavaScript / TypeScript</li>
+                    <li>Vue.js</li>
+                    <li>React.js</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Jest (Testing)</li>
+                    </ul>
+                </section>
 
-                    <section className="section">
-                        <h3>Back-End Services</h3>
-                        <p>
-                            Fox Dog provides the foundation for web applications with robust back-end services. Our back-end capabilities encompass these and more:
-                        </p>
-                        <ul>
-                            <li>Express.js</li>
-                            <li>Node.js</li>
-                            <li>AWS</li>
-                            <li>RESTful APIs</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                    </section>
+                <section className="section">
+                    <h3>Back-End Services</h3>
+                    <p>
+                    Fox Dog provides robust back-end foundations for modern applications. Our capabilities include:
+                    </p>
+                    <ul>
+                    <li>Node.js &amp; Express.js</li>
+                    <li>Python (Django)</li>
+                    <li>Databases: PostgreSQL, SQLite, MongoDB</li>
+                    <li>RESTful APIs</li>
+                    <li>Cloud Services: Google Cloud Platform, AWS </li>
+                    <li>Stripe Billing &amp; Payment Integration</li>
+                    </ul>
+                </section>
 
-                    <section className="section">
-                        <h3>Full-Stack Development</h3>
-                        <p>
-                            At Fox Dog, we take pride in our capability to seamlessly integrate front-end and back-end components, delivering optimal full-stack solutions for a range of projects.  The technologies listed above are only some of the packages I am more closely versed in.  Feel free to go to my <a href="https://github.com/jduffey1990">GitHub profile</a> and peruse my projects for more!
-                        </p>
-                    </section>
+                <section className="section">
+                    <h3>Professional Experience</h3>
+                    <p>
+                    Our recent collaboration with <strong>Pomarium</strong>—a Google Cloud Platform award-winning startup recognized as a top-three most compelling startup in 2024—showcases our full-stack proficiency. As a Full-Stack Developer on the project, Fox Dog:
+                    </p>
+                    <ul>
+                    <li>Reduced manual processes by 100% through billing automation using Vue, Django, and Stripe</li>
+                    <li>Collaborated closely with product owners to transform PRDs and Figma designs into functional features</li>
+                    <li>Led the development lifecycle to ensure best practices and deliver high-quality results</li>
+                    </ul>
+                    <p>
+                    This hands-on approach demonstrates our commitment to driving business value through technology.
+                    </p>
+                </section>
 
-                    <section className="section">
-                        <h3>Continuous Learning & Innovation</h3>
-                        <p>
-                            While Fox Dog is well-versed in JavaScript, React, and Express, our team is always at the forefront of learning and integrating novel technologies based on evolving project needs. Our commitment to continuous growth ensures delivery of cutting-edge solutions tailored to each project.
-                        </p>
-                    </section>
+                <section className="section">
+                    <h3>Full-Stack Development</h3>
+                    <p>
+                    We take pride in our ability to integrate front-end and back-end components seamlessly, delivering optimal full-stack solutions for a wide range of projects. The technologies listed above represent just a portion of our expertise.
+                    <br />
+                    Curious to learn more? Check out our{' '}
+                    <a href="https://github.com/jduffey1990">GitHub profile</a> to see examples of real-world applications we’ve worked on.
+                    </p>
+                </section>
+
+                
+
+                <section className="section">
+                    <h3>Continuous Learning &amp; Innovation</h3>
+                    <p>
+                    While Fox Dog is well-versed in JavaScript, Vue, React, Express, and Django, we continually explore emerging technologies to stay ahead of the curve. Our dedication to learning ensures that each project we undertake benefits from cutting-edge solutions tailored to its specific needs.
+                    </p>
+                </section>
                 </div>
             </div>
         </>
