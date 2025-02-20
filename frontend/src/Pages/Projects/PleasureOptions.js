@@ -39,13 +39,13 @@ function pleasureOptions() {
                   title="Jordle" 
                   image={jordle}
                   shortDescription="Jordan's version of your favorite online word guessing game.  Give it a go! if you win, you get a fun fact about the word you guessed.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
-                  onClick={() => window.open("https://jordle.onrender.com", '_blank')}
+                  onClick={() => window.open("https://github.com/jduffey1990/Jordle", '_blank')}
                 />
                 <ProjectsCard 
                   title="Jordan's Memory game" 
                   image={memory}
                   shortDescription="I made a memory game for my nieces and nephews to play.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
-                  onClick={() => window.open("https://jordans-memory-game.onrender.com", '_blank')}
+                  onClick={() => window.open("https://github.com/jduffey1990/memory-game", '_blank')}
                 />
                 <ProjectsCard 
                   title="restaurant-reservation" 
@@ -57,7 +57,7 @@ function pleasureOptions() {
                   title="Duffey Finance" 
                   image={finance}
                   shortDescription="Through Harvard's CS50 course, an assignment we were given was to develop a basic app using python and flask.  Once out of the course, the stock data wouldn't work anymore, so I paired the basic structure with the more robust Alpha Vantage API for real-life tickers and sustained stock tracking.  Please don't use sensitive password's or other identifying info on this site." 
-                  onClick={() => window.open("https://duffeyfinance.onrender.com", '_blank')}
+                  onClick={() => window.open("https://github.com/jduffey1990/cs50-finance", '_blank')}
                 />
                 <ProjectsCard 
                   title="CSharp API" 
