@@ -31,26 +31,28 @@ function pleasureOptions() {
                     backgroundColor: '#f6f8fa',  // light background to highlight the area
                     borderRadius: '8px',  // rounded corners for modern look
                     boxShadow: '0 2px 4px rgba(0,0,0,0.1)'  // subtle shadow for depth
-                  }}>These projects, although some may have been assignments for a course, are my own.  If there was a framework needed to satisfy course requirement, there are other significant changes made to make it my own. <br></br> <br></br>I know it's annoying, but please excuse the load time on the requests for these sites.  If I paid for immediate availability on my projects it would cost a lot in database prices every month.</h6>
+                  }}>These projects, although some may have been assignments for a course, are my own.  If there was a framework needed to satisfy course requirement, there are other significant changes made to make it my own. <br></br> <br></br>I know it's annoying, but please excuse the load time on the requests for these sites.  If I paid for immediate availability on my projects it would cost 
+                  <br></br><b style={{ fontWeight: "bold", fontSize: "30px" }}>a lot</b> 
+                  <br></br>in database or server prices every month.</h6>
             </div>
             <div className="projects-card-container" style={{margin: "20px 100px" }}>
 
                 <ProjectsCard 
                   title="Jordle" 
                   image={jordle}
-                  shortDescription="Jordan's version of your favorite online word guessing game.  Give it a go! if you win, you get a fun fact about the word you guessed.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
+                  shortDescription="Jordan's version of your favorite online word guessing game.  Give it a go! if you win, you get a fun fact about the word you guessed.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Render Server that serves the site  is a free version that takes a bit to activate when the user first opens the site." 
                   onClick={() => window.open("https://github.com/jduffey1990/Jordle", '_blank')}
                 />
                 <ProjectsCard 
                   title="Jordan's Memory game" 
                   image={memory}
-                  shortDescription="I made a memory game for my nieces and nephews to play.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the site." 
+                  shortDescription="I made a memory game for my nieces and nephews to play.  This project is built in Javascript, with HTML, CSS, React, PostgreSQL among other frameworks and libraries.  The Render Server that serves the site is a free version that takes a bit to activate when the user first opens the webpage." 
                   onClick={() => window.open("https://github.com/jduffey1990/memory-game", '_blank')}
                 />
                 <ProjectsCard 
                   title="restaurant-reservation" 
                   image={res}
-                  shortDescription="Restaurant Reservation is modeled by a ficticious restaurant named 'Periodic Tables' to manage their tables and reservations.  Fully CRUD and functional for any restaurant in need of reservation management.  The Elephant SQL database is a free version that takes a bit to activate when the user first opens the demo site." 
+                  shortDescription="Restaurant Reservation is modeled by a ficticious restaurant named 'Periodic Tables' to manage their tables and reservations.  Fully CRUD and functional for any restaurant in need of reservation management.  The Render Server that serves the site is a free version that takes a bit to activate when the user first opens the demo site." 
                   onClick={() => window.open("https://github.com/jduffey1990/restaurant-reservation", '_blank')}
                 />
                 <ProjectsCard 
