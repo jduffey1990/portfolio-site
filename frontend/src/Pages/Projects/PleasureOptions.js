@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
+import buster from "../../images/buster.png"
 import jordle from "../../images/jordle.png"
 import res from "../../images/res.png"
 import memory from "../../images/memory-game.png"
@@ -37,6 +38,12 @@ function pleasureOptions() {
             </div>
             <div className="projects-card-container" style={{margin: "20px 100px" }}>
 
+                <ProjectsCard 
+                  title="Buster Brackets" 
+                  image={buster}
+                  shortDescription="My college basketball tournament algorithm turned legit!  Using Vue.js, docker, node.js, Hapi, MongoDB, AWS, Render, OpenAI and more.  Offseason load times may be affected because of spin down effects." 
+                  onClick={() => window.open("https://busterbrackets.com", '_blank')}
+                />
                 <ProjectsCard 
                   title="Jordle" 
                   image={jordle}
