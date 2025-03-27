@@ -42,7 +42,7 @@ function pleasureOptions() {
                   title="Buster Brackets" 
                   image={buster}
                   shortDescription="My college basketball tournament algorithm turned legit!  Using Vue.js, docker, node.js, Hapi, MongoDB, AWS, Render, OpenAI and more.  Offseason load times may be affected because of spin down effects." 
-                  onClick={() => window.open("https://busterbrackets.com", '_blank')}
+                  onClick={() => window.open("https://github.com/jduffey1990/busterbrackets-ui", '_blank')}
                 />
                 <ProjectsCard 
                   title="Jordle" 
