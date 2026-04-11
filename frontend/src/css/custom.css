@@ -172,6 +172,66 @@ body, html, .container-fluid {
   border-color: var(--color-accent);
 }
 
+/* ============================================================
+   PROJECT CARDS
+   ============================================================ */
+.fd-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.fd-project-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.fd-project-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+}
+
+.fd-project-card__body {
+  flex: 1;
+}
+
+.fd-project-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 10px;
+}
+
+.fd-project-card__desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.fd-project-card__tags {
+  flex-wrap: wrap;
+}
+
+.fd-project-card__footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+}
+
+.fd-project-card__cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
 /* Legacy — kept for About page until Phase 5 */
 .content-overlay {
   padding: 40px 32px;

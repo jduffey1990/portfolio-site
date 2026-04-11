@@ -106,12 +106,12 @@
 - [x] **3.5** `content-overlay` background: replace white semi-transparent box with dark surface panels
 
 ### Phase 4: Projects Page
-- [ ] **4.1** `BusinessOptions.js` — add Mozaiq card (description + link) and Tower of Babble card (App Store link)
-- [ ] **4.2** Update Pomarium card description to mention it was a GCP award-winning startup
-- [ ] **4.3** `ProjectsCard.js` — redesign card: dark surface, tech tag pills on each card, better image sizing (fixed aspect ratio), hover glow effect
-- [ ] **4.4** Business Ventures section heading modernized
-- [ ] **4.5** GitHub Projects section: reorder cards — Buster Brackets first (most impressive/recent), remove or deprioritize pure course assignments
-- [ ] **4.6** Apology text about Render spin-up times — rewrite to be confident, not apologetic
+- [x] **4.1** `BusinessOptions.js` — add Mozaiq card and Tower of Babble card (App Store link)
+- [x] **4.2** Update Pomarium card description to mention it was a GCP award-winning startup
+- [x] **4.3** `ProjectsCard.js` — redesign card: dark surface, tech tag pills, hover glow effect
+- [x] **4.4** Business Ventures section heading modernized
+- [x] **4.5** GitHub Projects section: reorder — Buster Brackets first, removed memory game and C# course assignments
+- [x] **4.6** Apology text about Render spin-up times — removed entirely
 
 ### Phase 5: About Page
 - [ ] **5.1** Work History section: add Mozaiq paragraph (microservices, AWS serverless architecture, solo infrastructure ownership)

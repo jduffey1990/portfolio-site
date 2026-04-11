@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
-
-function projectsCard({ title, image, shortDescription, expandedContent, onClick  }) {
-    const [showDetails, setShowDetails] = useState(false);
-
-    return (
-        <div className="projects-card">
-            <div className="card-header">
-                <h2>{title}</h2>
-                <img className="projects-card-image" src={image} alt={title} />
-            </div>
-            <div className="card-content">
-                <p>{shortDescription}</p>
-            </div>
-            <div className="card-footer">
-            <button className="btn-form" onClick={onClick}>
-                View More
-            </button>
-            </div>
-            
+function ProjectsCard({ title, tags = [], description, onClick }) {
+  return (
+    <div className="fd-project-card" onClick={onClick}>
+      <div className="fd-project-card__body">
+        <h3 className="fd-project-card__title">{title}</h3>
+        <p className="fd-project-card__desc">{description}</p>
+      </div>
+      {tags.length > 0 && (
+        <div className="fd-tags fd-project-card__tags">
+          {tags.map(tag => (
+            <span key={tag} className="fd-tag">{tag}</span>
+          ))}
         </div>
-    );
+      )}
+      <div className="fd-project-card__footer">
+        <span className="fd-project-card__cta">View →</span>
+      </div>
+    </div>
+  );
 }
 
-export default projectsCard;
+export default ProjectsCard;
