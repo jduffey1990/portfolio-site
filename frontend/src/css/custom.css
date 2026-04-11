@@ -242,9 +242,49 @@ body, html, .container-fluid {
 .section p, .section ul, .section li { color: var(--color-text-muted); line-height: 1.7; }
 .highlighted { color: var(--color-accent); font-weight: 600; }
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.fd-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 28px 32px;
+  background-color: var(--color-bg);
+}
+
+.fd-footer__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fd-footer__copy {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.fd-footer__links {
+  display: flex;
+  gap: 16px;
+}
+
+.fd-footer__link {
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.fd-footer__link:hover {
+  color: var(--color-text-primary);
+}
+
 .Logo {
   font-family: 'Bungee', cursive;
-  font-size: 30px; /* Adjust this value according to your preference */
+  font-size: 30px;
 }
 
 .Logo .white-text {

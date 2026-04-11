@@ -120,9 +120,9 @@
 - [x] **5.4** Remove broken MapBox import and raw text section
 
 ### Phase 6: Footer
-- [ ] **6.1** Update copyright year to 2025
-- [ ] **6.2** Add GitHub + LinkedIn icon links
-- [ ] **6.3** Style: dark bg, subtle top border, centered or two-column layout
+- [x] **6.1** Update copyright year to 2025
+- [x] **6.2** Add GitHub + LinkedIn icon links (inline SVG, no extra dependency)
+- [x] **6.3** Style: dark bg, subtle top border, two-column layout (copy + icons)
 
 ### Phase 7: Polish & Responsive
 - [ ] **7.1** Audit mobile layout at 375px — fix any overflow or nav issues
