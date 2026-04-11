@@ -114,10 +114,10 @@
 - [x] **4.6** Apology text about Render spin-up times — removed entirely
 
 ### Phase 5: About Page
-- [ ] **5.1** Work History section: add Mozaiq paragraph (microservices, AWS serverless architecture, solo infrastructure ownership)
-- [ ] **5.2** Work History section: add Tower of Babble paragraph (iOS app, full-stack solo build, App Store published)
-- [ ] **5.3** Apply dark surface + content panel styling consistent with rest of refresh
-- [ ] **5.4** Remove or fix the broken MapBox map section (currently renders `Using the Map component` as raw text)
+- [x] **5.1** Work History section: add Mozaiq card (microservices, AWS serverless, solo infra ownership)
+- [x] **5.2** Work History section: add Tower of Babble card (iOS app, full-stack solo build, App Store published)
+- [x] **5.3** Apply dark surface + fd-exp-card styling consistent with rest of refresh
+- [x] **5.4** Remove broken MapBox import and raw text section
 
 ### Phase 6: Footer
 - [ ] **6.1** Update copyright year to 2025

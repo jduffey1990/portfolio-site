@@ -1,85 +1,139 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import GenBackground from '../Layout/GenBackground';
-import Contentback from "../images/Contentback.png";
-import Couple from "../images/ashandi.jpg";
-import FoxDog from "../images/FoxDog.png"
-import MapBoxMap from '../../use-mapbox-gl-js-with-react/MapBoxMap';
+import Footer from '../Layout/Footer';
+import FoxDog from '../images/FoxDog.png';
+import Couple from '../images/ashandi.jpg';
 
 function About() {
-    return (
-        <>
-            <GenBackground backgroundImage={FoxDog} compact>
-              <h1 className="fd-hero__title fd-hero__title--page">About Jordan</h1>
-            </GenBackground>
-            
-            <div style={{ 
-                backgroundImage: `url(${Contentback})`, 
-                backgroundPosition: 'center',
-                backgroundSize: 'cover', 
-                backgroundAttachment: 'fixed',
-                minHeight: '100vh',
-            }}>
-                <div className="content-overlay">
-                    
-                    <section className="section">
-                        <h2 style={{textAlign: 'center'}}>About <span className="highlighted">Jordan</span></h2>
-                        <img src={Couple} alt="Couple" style={{display: 'block', maxWidth: '60%', margin: '0 auto'}} />
-                    </section>
+  return (
+    <>
+      <GenBackground backgroundImage={FoxDog} compact>
+        <h1 className="fd-hero__title fd-hero__title--page">About Jordan</h1>
+      </GenBackground>
 
-                    <section className="section">
-                        <h3>Life Story</h3>
-                        <p>
-                            Jordan was born in Tucson, AZ, and relocated to Colorado Springs at a young age. He hails from a lineage of healthcare professionals: his father is an Orthopedic Surgeon, his sister a Mohs surgeon, his grandfather an oncologist, and his grandmother a nurse. Married to his wonderful wife, Ashley, since 2018, they are proud pet parents to a dog, two cats, and a flock of chickens that provide them with farm-fresh eggs. An interesting tidbit: when their dog, Franklin, curls up, he resembles a fox, which inspired the name 'Fox Dog'. Jordan and his family reside in Lakewood, CO. Among his hobbies are skiing, cycling, hiking, and exploring the finest restaurants and bars in the region.
-                        </p>
-                    </section>
+      <div className="fd-content">
 
-                    <section className="section">
-                        <h3>Education</h3>
-                        <p>
-                            Jordan pursued his college education at UCLA, earning a B.S. in Psychobiology with a focus on predental studies. He later attended the University of Colorado School of Dental Medicine and graduated summa cum laude with honors. Post-graduation, he expanded his expertise in implant dentistry, endodontics, and other specialized dental procedures at the University of Colorado School of Dental Medicine General Practice Residency.
-                        </p>
-                        <p>
-                            Upon reflection and recognizing his inherent strengths and passions, Jordan pivoted towards software development. He undertook both free and paid courses online, with platforms like Udemy. His exploration led him to <a href="https://www.thinkful.com">Thinkful</a>, a top-rated coding bootcamp recognized by Forbes in 2023. Thinkful's mentorship and continued support post-curriculum stood out for Jordan, guiding his journey in the tech world.
-                        </p>
-                    </section>
+        <section className="fd-section">
+          <h2 className="fd-section__heading">About Jordan</h2>
+          <img
+            src={Couple}
+            alt="Jordan and Ashley"
+            style={{ display: 'block', width: '100%', maxWidth: '480px', borderRadius: '12px', marginBottom: '28px' }}
+          />
+          <p className="fd-section__lead">
+            Jordan was born in Tucson, AZ, and relocated to Colorado Springs at a young age.
+            Married to his wonderful wife, Ashley, since 2018 — proud pet parents to a dog,
+            two cats, and a flock of chickens. When their dog Franklin curls up he resembles
+            a fox, which inspired the name Fox Dog. Based in Lakewood, CO. Hobbies include
+            skiing, cycling, hiking, and finding the best restaurants and bars in the region.
+          </p>
+        </section>
 
-                    <section className="section">
-                        <h3>Work History</h3>
-                        <p>
-                            After completing his residency, Jordan delved into private practice at Aspen Park Dental. During this time, he cultivated skills such as analytical thinking, problem-solving, and meticulous attention to detail. Three years later, he embraced a fresh opportunity at Longmont Complete Dentistry, a practice with a rich 30-year legacy.
-                        </p>
-                        <p>
-                            However, after four enriching years in the Dental field, Jordan realized that even though healthcare is in his lineage, it is not necessarily in his blood. Jordan felt drawn to the tech industry.  The allure of devising innovative solutions, architecting efficient systems, and being at the forefront of technological evolution resonated deeply with him. He realized his true calling was not in healthcare but in the dynamic world of software development.
-                        </p>
-                        <p>
-                            As a software developer, Jordan aspires to leverage technology in crafting impactful real-world solutions. Driven by the transformative power of software, he aims to enhance lives, optimize processes, and promote global connectivity. With his background in healthcare, he brings a unique perspective and is eager to bridge the healthcare-technology divide, ensuring the creation of tools that are both efficient and empathetic.
-                        </p>
-                        <p>
-                            Jordan is trusted by business professionals to complete their websites with care and empathy.  In the "Projects" link you can see the websites he has finished or is under construction.  The Mortgage Bureau is a happy customer of Fox Dog that wasn't happy with the annual expense of a "out-of-a-box" mortgage website solution they were previously using.  Jordan was able to decrease monthly expenses from around $315 a month to $10 a month with a one-time, upfront price solution that was less than paying a year of their previous subscription.  Mann Ranch is a mixed-use ranch outside of Wichita, KS that is both for personal property use and cattle ranching.  We have agreed on styling, and are waiting for professional photos from all four seasons to provide a curated glimpse into potential ownership once the photos can all be added to the website.
+        <section className="fd-section">
+          <h2 className="fd-section__heading">Education</h2>
+          <p className="fd-section__lead">
+            Jordan earned a B.S. in Psychobiology from UCLA, then graduated summa cum laude
+            from the University of Colorado School of Dental Medicine, followed by a General
+            Practice Residency. After recognizing his true strengths and passions, he pivoted
+            to software development — completing coursework through Udemy and{' '}
+            <a className="fd-link" href="https://www.thinkful.com" target="_blank" rel="noreferrer">Thinkful</a>,
+            a Forbes-recognized coding bootcamp.
+          </p>
+        </section>
 
-                        </p>
-                        <p>
-                            Pomarium is an opportunity that came in just in the nick of time.  The C-suite had an MVP built by contractors, and had finished a friends and family investment round.  The time was right to hire a growing team.  Jordan started immediately on full-stack development with Pomarium, often working directly with members of the C-suite to turn their imaginations into software reality.  Jordan's Magnum Opus with Pomarium was implementing a fully integrated payment system, not merely just a payment portal.  Stripe was connected into the application like a grape vine can be grafted into an established orchard.  This change dropped the Operations Team's involvement in billing by nearly 100% (there's always something that needs hands on...).  Pomarium continues the fight to bring portfolios to investors that put their money where their values are!
+        <section className="fd-section">
+          <h2 className="fd-section__heading">Work History</h2>
 
-                        </p>
-                    </section>
-
-                    <section className="section">
-                        <p>
-                            For further insights into Jordan's coding journey and resources, please feel free to <Link to="/contact">contact him</Link>.
-                        </p>
-                    </section>
-
-                    <section className="section">
-                        <MapBoxMap /> Using the Map component
-                    </section>
-
-                    <hr />
-                </div>
+          <div className="fd-exp-grid">
+            <div className="fd-exp-card">
+              <div className="fd-exp-card__header">
+                <span className="fd-exp-card__company">Mozaiq</span>
+                <span className="fd-exp-card__role">Solo Architect &amp; Full-Stack Developer</span>
+              </div>
+              <p className="fd-exp-card__blurb">
+                Designed and built a wholesale matchmaking platform from scratch — three
+                independent microservices, each with its own AWS CodePipeline, API Gateway,
+                Lambda function, and Neon PostgreSQL database. Sole owner of all
+                infrastructure decisions: Terraform IaC, Docker local dev, CI/CD pipelines,
+                and a multi-signal AI company verification engine.
+              </p>
+              <div className="fd-tags">
+                {["TypeScript","Hapi.js","AWS Lambda","Terraform","PostgreSQL","Docker","OpenAI"].map(t => (
+                  <span key={t} className="fd-tag">{t}</span>
+                ))}
+              </div>
             </div>
-        </>
-    );
+
+            <div className="fd-exp-card">
+              <div className="fd-exp-card__header">
+                <span className="fd-exp-card__company">Tower of Babble</span>
+                <span className="fd-exp-card__role">Solo Developer — App Store Published</span>
+              </div>
+              <p className="fd-exp-card__blurb">
+                Designed and shipped a full-stack iOS prayer app independently — Swift native
+                frontend, serverless TypeScript/Hapi backend on AWS, Redis caching, OpenAI
+                prayer generation, Azure and Fish Audio TTS voices, and Apple In-App Purchase
+                subscriptions across three tiers.
+              </p>
+              <div className="fd-tags">
+                {["Swift / iOS","TypeScript","Hapi.js","AWS Lambda","Redis","OpenAI","Azure TTS"].map(t => (
+                  <span key={t} className="fd-tag">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            <div className="fd-exp-card">
+              <div className="fd-exp-card__header">
+                <span className="fd-exp-card__company">Pomarium</span>
+                <span className="fd-exp-card__role">Full-Stack Developer</span>
+              </div>
+              <p className="fd-exp-card__blurb">
+                GCP award-winning startup recognized as a top-three most compelling startup
+                in 2024. Joined at the post-friends-and-family-round stage. Worked directly
+                with the C-suite to turn product requirements into shipped features.
+                Implemented a fully integrated Stripe billing system — grafted end-to-end
+                into the application — which eliminated nearly 100% of manual billing
+                operations.
+              </p>
+              <div className="fd-tags">
+                {["Vue.js","Django","PostgreSQL","Stripe","GCP"].map(t => (
+                  <span key={t} className="fd-tag">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            <div className="fd-exp-card">
+              <div className="fd-exp-card__header">
+                <span className="fd-exp-card__company">Fox Dog Software Development</span>
+                <span className="fd-exp-card__role">Freelance — Client Projects</span>
+              </div>
+              <p className="fd-exp-card__blurb">
+                Trusted by business owners to deliver production websites with care.
+                The Mortgage Bureau moved from a $315/month off-the-shelf solution
+                to a $10/month custom site with a one-time build fee. Additional
+                client work underway.
+              </p>
+              <div className="fd-tags">
+                {["React","AWS S3","HTML / CSS"].map(t => (
+                  <span key={t} className="fd-tag">{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="fd-section fd-section--cta">
+          <p className="fd-section__lead">
+            Interested in working together?{' '}
+            <Link to="/contact" className="fd-link">Get in touch</Link>.
+          </p>
+        </section>
+
+      </div>
+
+      <Footer />
+    </>
+  );
 }
 
 export default About;
