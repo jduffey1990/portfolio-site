@@ -1,5 +1,3 @@
-import React from "react";
-
 function GenBackground({ backgroundImage, compact = false, children }) {
   return (
     <div

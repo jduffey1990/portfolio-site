@@ -1,4 +1,3 @@
-import React from "react";
 import GenBackground from "../../Layout/GenBackground";
 import Content from "./Content";
 import Footer from "../../Layout/Footer";
