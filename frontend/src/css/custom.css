@@ -31,52 +31,156 @@ body, html, .container-fluid {
   font-family: var(--font-sans);
 }
 
-/* General styling for sections */
-.section {
-  margin-top: 40px;
-  padding: 0 20px;
+/* ============================================================
+   CONTENT SECTIONS
+   ============================================================ */
+.fd-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 32px 120px;
 }
 
-/* Title styling */
-.section h2, .section h3 {
-  border-bottom: 2px solid #0c99d1; /* Change the color as per your design preference */
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #333;
+.fd-section {
+  margin-bottom: 72px;
+}
+
+.fd-section--cta {
+  text-align: center;
+  padding: 48px 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.fd-section__heading {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.fd-section__heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-fox);
+  border-radius: 2px;
+}
+
+.fd-section__lead {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0;
+}
+
+/* Tech stack */
+.fd-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.fd-stack-group__label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
   font-weight: 500;
-}
-
-/* Paragraph styling */
-.section p {
-  color: #555;
-  line-height: 1.6;
-  font-size: 16px;
-}
-
-/* List styling */
-.section ul {
-  list-style-type: circle; /* Circular bullets for lists */
-  color: #555;
-}
-
-.section ul li {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
   margin-bottom: 10px;
-  font-size: 16px;
 }
 
-/* Highlighted text styling */
-.highlighted {
-  font-weight: bold;
-  color: #0c99d1; /* Change the color as per your design preference */
+.fd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
+.fd-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent-2);
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 20px;
+  padding: 3px 12px;
+  white-space: nowrap;
+}
+
+/* Experience cards */
+.fd-exp-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fd-exp-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.fd-exp-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.fd-exp-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.fd-exp-card__company {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.fd-exp-card__role {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.fd-exp-card__blurb {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+/* Inline link */
+.fd-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.fd-link:hover {
+  border-color: var(--color-accent);
+}
+
+/* Legacy — kept for About page until Phase 5 */
 .content-overlay {
-  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
-  padding: 20px;
-  border-radius: 10px; /* Optional for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
-  margin: 0px 150px
+  padding: 40px 32px;
 }
+
+.section { margin-top: 40px; padding: 0; }
+.section h2, .section h3 { color: var(--color-text-primary); border-bottom: 1px solid var(--color-border); padding-bottom: 8px; margin-bottom: 16px; }
+.section p, .section ul, .section li { color: var(--color-text-muted); line-height: 1.7; }
+.highlighted { color: var(--color-accent); font-weight: 600; }
 
 .Logo {
   font-family: 'Bungee', cursive;

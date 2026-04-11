@@ -99,11 +99,11 @@
 - [x] **2.4** Projects/About page hero: smaller (50vh), with page title text overlay
 
 ### Phase 3: Home Page Content (Content.js)
-- [ ] **3.1** Replace two-card "See my Projects / Contact" section with a cleaner hero CTA row (buttons, not cards with images)
-- [ ] **3.2** Tech stack section: replace `<ul>` lists with pill/badge tag grid — grouped by Frontend, Backend, Cloud/Infra, Mobile/AI
-- [ ] **3.3** Professional Experience: add Mozaiq and Tower of Babble blurbs alongside Pomarium
-- [ ] **3.4** Section heading style: apply accent bar underline pattern from design system
-- [ ] **3.5** `content-overlay` background: replace white semi-transparent box with dark surface panels
+- [x] **3.1** Replace two-card "See my Projects / Contact" section with a cleaner hero CTA row (buttons, not cards with images)
+- [x] **3.2** Tech stack section: replace `<ul>` lists with pill/badge tag grid — grouped by Frontend, Backend, Cloud/Infra, Mobile/AI
+- [x] **3.3** Professional Experience: add Mozaiq and Tower of Babble blurbs alongside Pomarium
+- [x] **3.4** Section heading style: apply accent bar underline pattern from design system
+- [x] **3.5** `content-overlay` background: replace white semi-transparent box with dark surface panels
 
 ### Phase 4: Projects Page
 - [ ] **4.1** `BusinessOptions.js` — add Mozaiq card (description + link) and Tower of Babble card (App Store link)
