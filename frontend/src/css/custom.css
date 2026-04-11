@@ -1,6 +1,34 @@
+/* ============================================================
+   DESIGN SYSTEM — Fox Dog Software Development
+   ============================================================ */
+:root {
+  --color-bg:           #0d1117;
+  --color-surface:      #161b22;
+  --color-surface-2:    #1c2128;
+  --color-border:       #30363d;
+  --color-accent:       #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-2:     #10b981;
+  --color-text-primary: #e6edf3;
+  --color-text-muted:   #8b949e;
+  --color-fox:          #f97316;
+
+  --font-sans: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-display: 'Bungee', cursive;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --transition: 0.2s ease;
+}
+
 body, html, .container-fluid {
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
 }
 
 /* General styling for sections */
@@ -161,7 +189,6 @@ body, html, .container-fluid {
 
 /*Form styling*/
 body {
-  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
 
