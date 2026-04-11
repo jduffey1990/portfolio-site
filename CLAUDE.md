@@ -87,10 +87,10 @@
 - [x] **0.4** Set dark background on `body`, base text color
 
 ### Phase 1: Navbar
-- [ ] **1.1** Replace Bootstrap navbar classes with custom glass-blur sticky nav
-- [ ] **1.2** Fox Dog logo — keep Bungee font, add `--color-fox` orange accent on "Fox Dog", white on "Software Development"
-- [ ] **1.3** Nav links — clean Inter font, hover underline slide-in animation
-- [ ] **1.4** Mobile: hamburger menu (collapse nav links on small screens)
+- [x] **1.1** Replace Bootstrap navbar classes with custom glass-blur sticky nav
+- [x] **1.2** Fox Dog logo — keep Bungee font, add `--color-fox` orange accent on "Fox Dog", white on "Software Development"
+- [x] **1.3** Nav links — clean Inter font, hover slide animation
+- [x] **1.4** Mobile: hamburger menu (collapse nav links on small screens)
 
 ### Phase 2: Hero (GenBackground)
 - [ ] **2.1** Add dark gradient overlay on top of background image
