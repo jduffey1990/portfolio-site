@@ -93,10 +93,10 @@
 - [x] **1.4** Mobile: hamburger menu (collapse nav links on small screens)
 
 ### Phase 2: Hero (GenBackground)
-- [ ] **2.1** Add dark gradient overlay on top of background image
-- [ ] **2.2** Add centered hero text: tagline + subtitle over the image (currently the component renders an empty div)
-- [ ] **2.3** Home page hero gets: "Fox Dog Software Development" + "Full-Stack · Serverless · iOS" + CTA buttons (See Projects, Contact)
-- [ ] **2.4** Projects/About page hero: smaller (50vh), with page title text overlay
+- [x] **2.1** Add dark gradient overlay on top of background image
+- [x] **2.2** Add centered hero text: tagline + subtitle over the image
+- [x] **2.3** Home page hero gets: "Fox Dog Software Development" + "Full-Stack · Serverless · iOS" + CTA buttons (See Projects, Contact)
+- [x] **2.4** Projects/About page hero: smaller (50vh), with page title text overlay
 
 ### Phase 3: Home Page Content (Content.js)
 - [ ] **3.1** Replace two-card "See my Projects / Contact" section with a cleaner hero CTA row (buttons, not cards with images)

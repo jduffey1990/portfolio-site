@@ -9,7 +9,9 @@ import MapBoxMap from '../../use-mapbox-gl-js-with-react/MapBoxMap';
 function About() {
     return (
         <>
-            <GenBackground backgroundImage={FoxDog}/>
+            <GenBackground backgroundImage={FoxDog} compact>
+              <h1 className="fd-hero__title fd-hero__title--page">About Jordan</h1>
+            </GenBackground>
             
             <div style={{ 
                 backgroundImage: `url(${Contentback})`, 

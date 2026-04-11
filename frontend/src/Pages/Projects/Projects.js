@@ -12,7 +12,9 @@ function Projects() {
   return (
     
     <div>
-        <GenBackground backgroundImage={FoxDog}/>
+        <GenBackground backgroundImage={FoxDog} compact>
+          <h1 className="fd-hero__title fd-hero__title--page">Projects</h1>
+        </GenBackground>
         <BusinessOptions />
         <PleasureOptions />
         <Footer />

@@ -213,16 +213,125 @@ body, html, .container-fluid {
 .fd-nav__hamburger--open span:nth-child(2) { opacity: 0; }
 .fd-nav__hamburger--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/*Background for the changing colors*/
-.header-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* ============================================================
+   HERO
+   ============================================================ */
+.fd-hero {
   position: relative;
   height: 100vh;
-  background-color: #3d98d4;
-  transition: background-color 0.5s ease-in;
-  z-index:900
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.fd-hero--compact {
+  height: 50vh;
+  min-height: 320px;
+}
+
+.fd-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 17, 23, 0.55) 0%,
+    rgba(13, 17, 23, 0.75) 60%,
+    rgba(13, 17, 23, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+.fd-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 760px;
+}
+
+.fd-hero__tagline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fox);
+  margin-bottom: 16px;
+}
+
+.fd-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.75rem);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.fd-hero__title--page {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.fd-hero__sub {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 36px;
+}
+
+.fd-hero__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.fd-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 2px solid transparent;
+}
+
+.fd-btn--primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.fd-btn--primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.fd-btn--ghost {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.fd-btn--ghost:hover {
+  border-color: var(--color-text-muted);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.general-header-background {
+  /* kept for backwards compat — new code uses .fd-hero */
+  display: none;
 }
 
 .polaroid-image {

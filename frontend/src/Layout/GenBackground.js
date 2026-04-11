@@ -1,12 +1,15 @@
 import React from "react";
 
-
-function GenBackground({backgroundImage}) {
-    return (
-        <div className="general-header-background" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            {/* Other content can go here if needed */}
-        </div>
-    );
+function GenBackground({ backgroundImage, compact = false, children }) {
+  return (
+    <div
+      className={`fd-hero ${compact ? "fd-hero--compact" : ""}`}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="fd-hero__overlay" />
+      {children && <div className="fd-hero__content">{children}</div>}
+    </div>
+  );
 }
 
 export default GenBackground;
