@@ -53,12 +53,14 @@ function About() {
               <p className="fd-exp-card__blurb">
                 Designed and built a wholesale matchmaking platform from scratch — three
                 independent microservices, each with its own AWS CodePipeline, API Gateway,
-                Lambda function, and Neon PostgreSQL database. Sole owner of all
-                infrastructure decisions: Terraform IaC, Docker local dev, CI/CD pipelines,
-                and a multi-signal AI company verification engine.
+                Lambda function, and Neon PostgreSQL database. Sole owner of all infrastructure
+                decisions: Terraform IaC, Docker local dev, and CI/CD pipelines. Designed and
+                implemented a RAG-based AI advisor using pgvector embeddings and GPT-4o
+                tool-calling orchestration, enabling brands to conversationally discover retail
+                distribution partners through hybrid vector/SQL search.
               </p>
               <div className="fd-tags">
-                {["TypeScript","Hapi.js","AWS Lambda","Terraform","PostgreSQL","Docker","OpenAI"].map(t => (
+                {["TypeScript","Hapi.js","AWS Lambda","Terraform","PostgreSQL","pgvector","Docker","OpenAI","RAG"].map(t => (
                   <span key={t} className="fd-tag">{t}</span>
                 ))}
               </div>

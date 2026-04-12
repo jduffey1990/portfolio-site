@@ -22,10 +22,10 @@ const STACK = [
 const EXPERIENCE = [
   {
     company: "Mozaiq",
-    role: "Solo Architect & Full-Stack Developer",
+    role: "Founding Employee and Full-Stack Developer",
     blurb:
-      "Built a wholesale matchmaking platform from the ground up — three independent microservices, each with its own AWS pipeline, PostgreSQL database, and Terraform-managed infrastructure. Implemented a multi-signal company verification engine using web scraping, Google Places, and OpenAI enrichment.",
-    tags: ["TypeScript", "Hapi.js", "AWS Lambda", "Terraform", "PostgreSQL", "Docker", "OpenAI"],
+      "Built a wholesale matchmaking platform from the ground up — three independent microservices, each with its own AWS pipeline, PostgreSQL database, and Terraform-managed infrastructure. Designed and implemented a RAG-based AI advisor enabling brands to conversationally discover retail distribution partners through hybrid pgvector/SQL search and GPT-4o tool-calling orchestration.",
+    tags: ["TypeScript", "Hapi.js", "AWS Lambda", "Terraform", "PostgreSQL", "pgvector", "Docker", "OpenAI", "RAG"],
   },
   {
     company: "Tower of Babble",

@@ -4,8 +4,8 @@ const VENTURES = [
   {
     title: "Mozaiq",
     description:
-      "Wholesale matchmaking platform built on a microservices architecture. Three independent services — users, companies, and business verification — each with its own AWS Lambda pipeline, Neon PostgreSQL database, and Terraform-managed infrastructure. AI-powered company verification using multi-signal confidence scoring.",
-    tags: ["TypeScript", "Hapi.js", "AWS Lambda", "Terraform", "PostgreSQL", "Docker", "OpenAI"],
+      "Wholesale matchmaking platform built on a microservices architecture. Three independent services — users, companies, and business verification — each with its own AWS Lambda pipeline, Neon PostgreSQL database, and Terraform-managed infrastructure. Built a RAG-based AI advisor using pgvector embeddings and GPT-4o tool-calling so brands can conversationally discover retail distribution partners.",
+    tags: ["TypeScript", "Hapi.js", "AWS Lambda", "Terraform", "PostgreSQL", "pgvector", "Docker", "OpenAI", "RAG"],
     url: "https://github.com/jduffey1990/mozaiqReadMe",
   },
   {
