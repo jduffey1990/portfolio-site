@@ -232,6 +232,75 @@ body, html, .container-fluid {
   color: var(--color-accent);
 }
 
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.fd-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fd-contact-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.fd-contact-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+}
+
+.fd-contact-card__icon {
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(37, 99, 235, 0.08);
+  border-radius: 14px;
+}
+
+.fd-contact-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.fd-contact-card__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.fd-contact-card__cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .fd-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fd-stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Legacy — kept for About page until Phase 5 */
 .content-overlay {
   padding: 40px 32px;
