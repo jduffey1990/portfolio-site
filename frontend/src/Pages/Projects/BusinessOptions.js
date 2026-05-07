@@ -13,7 +13,7 @@ const VENTURES = [
     description:
       "iOS prayer companion app — live on the App Store. Swift native frontend backed by a serverless TypeScript/Hapi API. Features AI-generated personalized prayers, Azure and Fish Audio TTS voices, Redis caching, multi-denomination support, and Apple In-App Purchase subscriptions.",
     tags: ["Swift / iOS", "TypeScript", "Hapi.js", "AWS Lambda", "Redis", "OpenAI", "Azure TTS"],
-    url: "https://apps.apple.com/us/app/tower-of-babble/id6741057642",
+    url: "https://apps.apple.com/app/tower-of-babble/id6759347861",
   },
   {
     title: "Pomarium",
