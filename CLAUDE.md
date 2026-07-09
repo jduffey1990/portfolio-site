@@ -134,6 +134,7 @@
 ## Known Gotchas
 - `App.js` 404 redirect logic is intentional for GitHub Pages SPA routing — do not refactor.
 - `postbuild` script copies `404.html` and `CNAME` into the `build/` directory — these must remain in the project root.
-- MapBox component is imported in `About.js` from `../../use-mapbox-gl-js-with-react/MapBoxMap` — this path is outside `frontend/src/`. Check if it actually resolves before touching About.js.
+- About page lives at `frontend/src/Pages/about/About.js` (lowercase dir) — `AppRoutes.js` imports it from there. The old `Pages/About.js` is deleted.
+- Letters of reference are PDFs in `frontend/src/docs/`, bundled via a webpack `.pdf` file-loader rule into `build/docs/`. To swap a letter, overwrite the file keeping the same name. They're public once deployed — scrub phone numbers/emails first.
 - Bootstrap 5 is still in use for the grid system — don't remove it, but don't add more Bootstrap component classes; use custom CSS instead.
 - `GenBackground` renders an empty full-vh div — the hero text overlay work (Phase 2) will require adding children/props to this component.
