@@ -34,6 +34,18 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.pdf$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'docs',
+              name: '[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },

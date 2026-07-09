@@ -172,6 +172,180 @@ body, html, .container-fluid {
   border-color: var(--color-accent);
 }
 
+/* Testimonials */
+.fd-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .fd-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fd-testimonial-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.fd-testimonial-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.fd-testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.fd-testimonial-card__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.fd-testimonial-card__name {
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.fd-testimonial-card__role {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.fd-testimonial-card__quote {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Letter-of-reference badge — emerald like tech tags, signals an attached document */
+.fd-lor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent-2);
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.fd-lor-badge:hover {
+  background-color: rgba(16, 185, 129, 0.16);
+  border-color: var(--color-accent-2);
+}
+
+/* Letter-of-reference modal */
+.fd-lor-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fd-fade-in 0.15s ease;
+}
+
+@keyframes fd-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fd-lor-modal {
+  display: flex;
+  flex-direction: column;
+  width: min(860px, 100%);
+  height: min(85vh, 1000px);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.fd-lor-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.fd-lor-modal__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.fd-lor-modal__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.fd-lor-modal__open {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.fd-lor-modal__open:hover {
+  text-decoration: underline;
+  color: var(--color-accent);
+}
+
+.fd-lor-modal__close {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.fd-lor-modal__close:hover {
+  color: var(--color-text-primary);
+}
+
+/* white bg so the PDF page doesn't float on dark while loading */
+.fd-lor-modal__frame {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+}
+
 /* ============================================================
    PROJECT CARDS
    ============================================================ */
