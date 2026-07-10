@@ -41,7 +41,7 @@ const TESTIMONIALS = [
     role: 'Mortgage Broker',
     company: 'The Mortgage Bureau',
     image: Brock,
-    quote: 'Working with Jordan was tremendous in affecting our bottom line. For a one time cost, we replaced an out-of-the box web solution for our mortgage brokerage that was costing us around $315 a month with a solution that was more like $10 a month. I would recommend Fox Dog to anyone that needs to harness their digital footprint.',
+    quote: "I do mortgages and don’t know much about websites, so when our initial website designer overcharged us upfront and $315/mo after that to host, my partner and I accepted without many questions. Then I spoke with Jordan. Next thing we know, a plan is in motion to save us money while also having more ownership over our online output. He collaborated with us to build our perfect website - and now we pay a mere $10/mo to host. Jordan shows integrity in an industry in which I imagine it is easy to take advantage of folks who don’t know how much these services should cost. I’d never work with anyone else again.",
     letter: null,
   },
 ];
